@@ -48,3 +48,30 @@ int main() {
     }
     return 0;
 }
+
+
+/*
+10.5 Printing number Increasing Pattern (N Rows) 
+1 
+22 
+333 
+4444 
+. 
+. 
+N rows 
+*/
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+    int nor;
+    cout<<"enter number of rows: ";
+    cin>>nor;
+    for(int i=1;i<=nor;i++){
+        for(int j=1;j<=i;j++){
+            cout<<i;
+        }
+        cout<<endl;
+    }
+    return 0;
+}
