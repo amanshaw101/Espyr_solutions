@@ -23,3 +23,28 @@ int main() {
     }
     return 0;
 }
+
+
+
+/*
+10.3 Printing Number Pattern (N Rows) 
+12345 
+12345 
+12345 
+12345 
+. 
+. 
+N rows
+*/
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+    int nor;
+    cout<<"enter number of rows: ";
+    cin>>nor;
+    for(int i=0;i<nor;i++){
+        cout<<"12345"<<endl;
+    }
+    return 0;
+}
