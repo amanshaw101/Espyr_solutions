@@ -1,0 +1,51 @@
+5. A fruitseller buys a dozen mangoes at Rs.X. He sells 1 mango at Rs.Y. Write a program to 
+determine the profit or loss in Rs. for the fruitseller. 
+Input and Output Format: 
+Input consists of 2 floating point numbers which correspond to X and Y. 
+Refer sample input and output for formatting specifications. All floating point numbers are 
+displayed correct to 2 decimal places. 
+All text in bold corresponds to input and the rest corresponds to output. 
+Sample Input and Output 1: 
+Enter the price of a dozen mangoes 
+60.0 
+Enter the price at which 1 mango is being sold 
+4 
+Loss : Rs.12.00 
+Sample Input and Output 2: 
+Enter the price of a dozen mangoes 
+60.0 
+Enter the price at which 1 mango is being sold 
+6 
+Profit : Rs.12.00 
+Sample Input and Output 3: 
+Enter the price of a dozen mangoes 
+60.0 
+Enter the price at which 1 mango is being sold 
+5 
+No profit nor loss
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    float cp, sp_per_mango, tsp;
+
+    cout << "Enter the price of a dozen mangoes" << endl;
+    cin >> cp;
+    cout << "Enter the price at which 1 mango is being sold" << endl;
+    cin >> sp_per_mango;
+
+    tsp = 12 * sp_per_mango;
+
+    if (tsp > cp) {
+        cout << "Profit : Rs." << tsp - cp << endl;
+    }
+    else if (tsp < cp) {
+        cout << "Loss : Rs." << cp - tsp << endl;
+    }
+    else {
+        cout << "No profit nor loss" << endl;
+    }
+
+    return 0;
+}
