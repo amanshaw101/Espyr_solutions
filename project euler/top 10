@@ -97,6 +97,19 @@ int main() {
     return 0;
 }
 
+6) Sum Square Difference
+#include <iostream>
+using namespace std;
+int main(){
+    long long int sumOfSquares = 0LL;
+    long int squareOfSum = 0LL;
+    for (int number = 1; number <= 100; ++number)    {
+        sumOfSquares += (number * number); 
+        squareOfSum += number;
+    }
+    squareOfSum *= squareOfSum;
+    cout << (squareOfSum - sumOfSquares) << "\n";
+}
 
 7) The 10,001st Prime
 #include <iostream>
