@@ -75,6 +75,29 @@ int main(){
     cout << largestPalindromeProduct << "\n";
 }
 
+5) Smallest Mutiple
+#include <iostream>
+using namespace std;
+int main() {
+    long long num = 20; 
+    while (true) {
+        bool divisible = true;
+        for (int i = 1; i <= 20; i++) {
+            if (num % i != 0) {
+                divisible = false;
+                break;
+            }
+        }
+        if (divisible) {
+            cout << "The smallest number divisible by 1 to 20 is: " << num << endl;
+            break;
+        }
+        num++;
+    }
+    return 0;
+}
+
+
 7) The 10,001st Prime
 #include <iostream>
 using namespace std;
