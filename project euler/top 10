@@ -81,9 +81,9 @@ int main(){
         "05886116467109405077541002256983155200055935729725"
         "71636269561882670428252483600823257530420752963450";
     long long int greatestProduct = 1;
-    for (std::size_t i = 0; i < numberString.length() - 13; ++i){
+    for (size_t i = 0; i < numberString.length() - 13; ++i){
         long long int currentProduct = 1;
-        for (std::size_t j = i; j < i + 13; ++j){
+        for (size_t j = i; j < i + 13; ++j){
             currentProduct *= numberString[j] - '0';
         }
         if (currentProduct > greatestProduct){
