@@ -54,6 +54,27 @@ int main(){
     cout << highestPrimeFactor << "\n";
 }
 
+4) Largest Palindrome Product
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+    int largestPalindromeProduct = 0;
+    for (int i = 100; i < 1000; ++i){
+        for (int j = 100; j < 1000; ++j){
+            int currentProduct = i * j;
+            string currentProductString = to_string(currentProduct);
+            if (
+                (currentProductString == std::string{ currentProductString.rbegin(), currentProductString.rend() }) &&
+                (currentProduct > largestPalindromeProduct)
+            )            {
+                largestPalindromeProduct = currentProduct;
+            }
+        }
+    }
+    cout << largestPalindromeProduct << "\n";
+}
+
 7) The 10,001st Prime
 #include <iostream>
 using namespace std;
