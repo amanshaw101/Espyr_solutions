@@ -1,4 +1,4 @@
-//code in cpp to print multiples of 3 or 5 and sum all the multiples
+1) Print multiples of 3 or 5 and sum all the multiples
 #include <iostream>
 using namespace std;
 int main(){
@@ -9,4 +9,22 @@ int main(){
     }}
     cout<<sum;
     return 0;
+}
+
+2) sum of even Fibonacci less than 4 million
+#include <iostream>
+using namespace std;
+int main(){
+    int previousFibNum1 = 0;
+    int currentFibNum = 1;
+    int fibNumSum = 0;
+    while(currentFibNum <= 4000000)
+    {
+        fibNumSum += (currentFibNum % 2 == 0) ?
+            currentFibNum : 0;
+        int previousFibNum2 = previousFibNum1;
+        previousFibNum1 = currentFibNum;
+        currentFibNum = previousFibNum2 + previousFibNum1;
+    }
+    cout << fibNumSum << "\n";
 }
