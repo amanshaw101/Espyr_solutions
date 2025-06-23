@@ -75,7 +75,7 @@ int main(){
     cout << largestPalindromeProduct << "\n";
 }
 
-5) Smallest Mutiple
+5) Smallest Multiple
 #include <iostream>
 using namespace std;
 int main() {
